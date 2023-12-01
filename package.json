@@ -36,6 +36,7 @@
 	"packageManager": "yarn@3.6.0",
 	"license": "MIT",
 	"publishConfig": {
+		"access": "public",
 		"registry": "https://registry.npmjs.org/"
 	},
 	"keywords": [
