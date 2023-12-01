@@ -1,61 +1,22 @@
 
-export const fiscalYear = (year: number, startMonth: number) => {
+const validateFyStartMonth = (fiscalYearStartMonth: number) => {
+    if (fiscalYearStartMonth < 0 || fiscalYearStartMonth > 11) {
+        throw new Error(`FY Start Month (${fiscalYearStartMonth}) must be a number from 0 to 11`)
+    }
+}
 
-    // buildMonths
+export const getFiscalYearOfDate = (date: Date, fiscalYearStartMonth: number) => {
 
-    const getFinancialYearOfDate = (date: Date) => {
+    validateFyStartMonth(fiscalYearStartMonth)
 
+    let year;
+    if (fiscalYearStartMonth === 0) {
+        year = date.getFullYear()
+    } else if (date.getMonth() < fiscalYearStartMonth) {
+         year = date.getFullYear()
+    } else  {
+        year = date.getFullYear() + 1;
     }
 
-    const getStartDate = () => {
-
-    }
-
-    const getEndDate = () => {
-
-    }
-
-    const getStartMonthIndex = () => {
-        return startMonth;
-    }
-
-    const getLastMonthIndex = () => {
-
-    }
-
-    const getFirstDayOfFiscalYear = () => {
-
-    }
-
-    const getLastDayOfFiscalYear = () => {
-
-    }
-
-    const getStartOfFirstQuarter = () => {
-
-    }
-
-    const getEndOfFirstQuarter = () => {
-
-    }
-
-    const getEndOfSecondQuarter = () => {
-
-    }
-
-    const getEndOfThirdQuarter = () => {
-
-    }
-
-    const getEndOfFourthQuarter = () => {
-
-    }
-
-    return {
-        getFirstDayOfFiscalYear,
-        getLastDayOfFiscalYear,
-        getLastMonthIndex,
-        getStartMonthIndex
-    }
-
+    return year
 }
