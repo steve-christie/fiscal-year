@@ -446,6 +446,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sambruca/fiscal-year@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@sambruca/fiscal-year@workspace:."
+  dependencies:
+    "@types/chai": ^4.3.1
+    "@types/mocha": ^9.1.1
+    "@types/node": ^17.0.35
+    "@typescript-eslint/eslint-plugin": ^5.22.0
+    "@typescript-eslint/parser": ^5.22.0
+    chai: ^4.3.6
+    eslint: ^8.14.0
+    eslint-config-prettier: ^8.8.0
+    eslint-plugin-import: ^2.26.0
+    husky: ^8.0.0
+    mocha: ^10.0.0
+    mocha-junit-reporter: ^2.0.2
+    nyc: ^15.1.0
+    prettier: ^2.6.2
+    rimraf: 3.0.2
+    source-map-support: ^0.5.21
+    ts-node: ^5.0.1
+    typescript: ^4.6.4
+  languageName: unknown
+  linkType: soft
+
 "@types/chai@npm:^4.3.1":
   version: 4.3.11
   resolution: "@types/chai@npm:4.3.11"
@@ -1763,31 +1788,6 @@ __metadata:
   checksum: 4c172680e8f8c1f78839486e14a43ef82e9decd0e74145f40707cc42e7420506d5ec92d9a11c22bd2c48fb0c384ea05dd30e10dd152fefeec6f2f75282a8b844
   languageName: node
   linkType: hard
-
-"fiscal-year@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "fiscal-year@workspace:."
-  dependencies:
-    "@types/chai": ^4.3.1
-    "@types/mocha": ^9.1.1
-    "@types/node": ^17.0.35
-    "@typescript-eslint/eslint-plugin": ^5.22.0
-    "@typescript-eslint/parser": ^5.22.0
-    chai: ^4.3.6
-    eslint: ^8.14.0
-    eslint-config-prettier: ^8.8.0
-    eslint-plugin-import: ^2.26.0
-    husky: ^8.0.0
-    mocha: ^10.0.0
-    mocha-junit-reporter: ^2.0.2
-    nyc: ^15.1.0
-    prettier: ^2.6.2
-    rimraf: 3.0.2
-    source-map-support: ^0.5.21
-    ts-node: ^5.0.1
-    typescript: ^4.6.4
-  languageName: unknown
-  linkType: soft
 
 "flat-cache@npm:^3.0.4":
   version: 3.2.0
