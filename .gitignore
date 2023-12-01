@@ -4,3 +4,7 @@
 node_modules
 *.iml
 dist
+
+coverage
+.nyc_output
+junit.xml
