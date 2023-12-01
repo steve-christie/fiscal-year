@@ -1,4 +1,6 @@
 .idea
-.yarn
+.yarn/cache
+.yarn/install-state.gz
 node_modules
 *.iml
+dist
